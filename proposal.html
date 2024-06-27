@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Noraqilah Binti Mohd Dusuki</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 10px;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            position: relative; 
+        }
+        p {
+            color: #333;
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            font-weight: 300;
+            letter-spacing: .03rem;
+        }
+        .section-title {
+            font-size: 3.6rem;
+            font-weight: 400;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            text-align: center;
+        }
+        .section-title span {
+            color: crimson;
+        }
+        .cta {
+            display: inline-block;
+            padding: 10px 12px; 
+            color: white;
+            background-color: crimson;
+            border: none;
+            font-size: 1.2rem; 
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            margin-top: 24px; 
+            transition: .3s ease background-color, .3s ease color;
+            text-decoration: none;
+            border-radius: 4px;
+            display: block;
+            width: 50%;
+            margin: 10px auto; 
+            text-align: center;
+        }
+        .cta:hover {
+            background-color: #960018;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+            font-size: 1.6rem;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+        ul li {
+            margin-bottom: 6px;
+        }
+        h2 {
+            font-size: 2.4rem;
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .passport-photo {
+            width: 100px; 
+            height: 100%;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .photo-cell {
+            width: 120px;
+            text-align: center;
+        }
+        .job-details {
+            font-size: 1.4rem;
+            color: #666;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="section-title">Resume - Noraqilah Binti Mohd Dusuki <span>Details</span></h1>
+        
+        <table>
+            <tr>
+                <td rowspan="4" class="photo-cell"><img id="myImg" class="passport-photo" src="formal.jpg" alt="Passport Photo"></td>
+                <th colspan="2">Personal Information</th>
+            </tr>
+            <tr>
+                <td><b>Name:</b> Noraqilah Binti Mohd Dusuki</td>
+                <td><b>Student at:</b> UiTM CAWANGAN KEDAH</td>
+            </tr>
+            <tr>
+                <td><b>Mobile No:</b> 017-2795052</td>
+                <td><b>Email Address:</b> 2023213436@student.edu.uitm.my</td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>Address:</b> Pt699 Kampung Ingin Maju Sungai Tasin 18200, Dabong, Kuala Krai, Kelantan.</td>
+            </tr>
+        </table>
+
+        <h2>Objective</h2>
+        <p>
+            I intend to gain practical experience in library and information management, with a focus on digital collection management and the provision of information services that are responsive to user needs. I plan to leverage my knowledge in cataloging, indexing, and library information technology to support the achievement of the library's mission of promoting literacy and lifelong learning.
+        </p>
+
+        <h2>Study at:</h2>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>University</th>
+            </tr>
+            <tr>
+                <td>Bachelor of Information Science (Hons) Library Management</td>
+                <td>UiTM CAWANGAN KEDAH</td>
+            </tr>
+        </table>
+
+        <h2>Work Experience:</h2>
+        <table>
+            <tr>
+                <th>Position</th>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Duration</th>
+                <th>Responsibilities</th>
+            </tr>
+            <tr>
+                <td>Hotel Receptionist</td>
+                <td>Nanyang Hotel</td>
+                <td>Gua Musang</td>
+                <td>Six Months</td>
+                <td>
+                    <ul>
+                        <li>Handled guest inquiries and reservations.</li><br>
+                        <li>Managed check-in and check-out processes efficiently.</li><br>
+                        <li>Ensured customer satisfaction by addressing concerns promptly.</li><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Waitress</td>
+                <td>Restoran Sup Urat Keting</td>
+                <td>Gua Musang</td>
+                <td>Six Months</td>
+                <td>
+                    <ul>
+                        <li>Provided excellent customer service in a fast-paced environment.</li><br>
+                        <li>Managed multiple tables and ensured timely food delivery.</li><br>
+                        <li>Collaborated with kitchen staff to maintain high standards of food quality.</li><br>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        
+        <button class="cta" onclick="window.print()">Print Resume</button>
+        <a href="index.html" class="cta">Back to Home</a>
+    </div>
+     <!-- The Modal -->
+     <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

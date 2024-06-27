@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>About Me - Noraqilah</title>
+<style>
+    /* General styles */
+    body {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Custom marker list styles */
+    .custom-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    .custom-list li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        line-height: 1;
+    }
+    .custom-list li:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        background-color: crimson; 
+        border-radius: 50%;
+    }
+
+    /* Modal styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.9);
+    }
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+        z-index: 1001;
+    }
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Text alignment and size */
+    .about p {
+        text-align: justify;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .about h2 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    /* Center align button */
+    .play-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #playButton {
+        background-color: crimson; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    #playButton:hover {
+        background-color: #9e0000;
+    }
+</style>
+</head>
+<body>
+
+  <!-- Audio Background Music -->
+  <audio autoplay loop>
+    <source src="kadhale.mp3" type="audio/mp3">
+</audio>
+
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+            <div class="brand">
+                <a href="index.html#Eunwoo"><h1><span>N</span>oraqilah <span>D</span>usuki</h1></a>
+            </div>
+            <div class="nav-list">
+                <div class="hamburger"><div class="bar"></div></div>
+                <ul>
+                    <li><a href="index.html#Eunwoo" data-after="Home">Home</a></li>
+                    <li><a href="services.html#services" data-after="Education">Education</a></li>
+                    <li><a href="projects.html#projects" data-after="My life">My life</a></li>
+                    <li><a href="about me.html#about" data-after="About me">About me</a></li>
+                    <li><a href="video section.html#video-section" data-after="My Video">My Video</a></li>
+                    <li><a href="contact.html#contact" data-after="Contact">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img id="aboutImg" src="aqila 2.jpg" alt="img">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About<span> me </span></h1>
+                 
+                <!-- Custom marker list -->
+
+                <ul class="custom-list">
+                    <li><strong><h2>Meet Noraqilah: A Journey through Literature and Life</h2></strong><br>
+                        <p>Noraqilah binti Mohd Dusuki hails from Dabong, Kelantan. I possess a deep ardor for literature that molds my sense of self and enhances my relationships with those I hold dear.</p>
+                    </li>
+                    <li><strong><h2>Literary Exploration</h2></strong><br>
+                        <p>Since a young age, I have derived comfort and motivation from immersing myself in the narratives of books and comics. These literary environments are not only means of escaping reality but rather dynamic landscapes that stimulate my imagination and cultivate my intellectual curiosity. I delve into the intricacies of human emotions, ethnic variety, and life.</p>
+                    </li>
+                    <li><strong><h2>Family and Values</h2></strong><br>
+                        <p>These literary pursuits are not only for personal development, but they also play a crucial role in strengthening my family relationships. Literature serves as a medium for significant discussions and treasured recollections, whether via storytelling over intimate picnics or engaging in debates about plot developments during family holidays. Values such as honesty and love are not only abstract concepts but rather tangible and integral parts of my everyday life and relationships.</p>
+                    </li>
+                    <li><strong><h2>Integrity</h2></strong><br>
+                        <p>As a student, I consistently prioritize and maintain integrity as a fundamental value in all my pursuits. My guiding principles influence my choices and actions and determine how I engage with people, creating an environment of trust and respect in both my academic and personal spheres.</p>
+                    </li>
+                    <li><strong><h2>Academic Journey</h2></strong><br>
+                        <p>I have pursued my academic career based on my strong conviction in the profound impact that teamwork can have. I actively engage in study groups to explore complex themes or establish collaborative research initiatives with my classmates. I strongly believe that collaboration promotes individual and scholarly development, creating a nurturing environment for education and creativity. My positive perspective motivates me and encourages others to pursue academic success.</p>
+                    </li>
+                    <li><p>Essentially, my life serves as evidence of the profound impact of literature and the lasting principles that guide my own development. By engaging in scholarly endeavors and cultivating a deep interest in literature, I persistently construct a narrative that exalts inquiry and the pleasure derived from shared encounters.</p></li>
+                </ul>
+                
+                <a href="index.html" class="cta">Download Resume</a>
+                
+                <!-- Play/Pause Button for Background Music -->
+<button id="playButton">Play Background Music</button>
+
+            </div>
+            </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand"><h1><span>N</span>oraqilah <span>D</span>usuki</h1></div>
+            <h2>Thanks for Visit My Webpage</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="https://www.facebook.com/share/ZBykX7FtrKXi2ork/?mibextid=qi2Omg"><img src="https://img.icons8.com/bubbles/50/facebook-new.png" alt="facebook-new"/>
+                    </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://www.instagram.com/k___nothing00?igsh=M2wwM3hzZ2gxenJ2"><img src="https://img.icons8.com/bubbles/50/instagram-new--v2.png" alt="instagram-new--v2"/>
+                        </a>
+                        </div>
+                        <div class="social-item">
+                            <a href="https://x.com/baby0080?t=tKPbFAbfrdFcWoe63uRIeg&s=09"><img src="https://img.icons8.com/bubbles/50/twitter-squared.png" alt="twitter-squared"/>
+                            </a>
+                            </div>
+                            <div class="social-item">
+                                <a href="https://www.tiktok.com/@missscarlet08?_t=8n0EQ3C2Afi&_r=1"><img src="https://img.icons8.com/bubbles/50/tiktok.png" alt="tiktok"/>
+                                </a>
+                </div>
+            </div>
+            <p>Copyright © 2024 Aqilah. All rights reserved</p>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <script>
+
+        var modal = document.getElementById("myModal");
+
+        var img = document.getElementById("aboutImg");
+        var modalImg = document.getElementById("img01");
+        var isModalOpen = false;
+
+        img.onclick = function(){
+            if (isModalOpen) {
+                modal.style.display = "none";
+                isModalOpen = false;
+            } else {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                isModalOpen = true;
+            }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() { 
+            modal.style.display = "none";
+            isModalOpen = false;
+        }
+
+    var audio = document.querySelector('audio');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            document.getElementById('playButton').innerHTML = 'Pause Background Music';
+        } else {
+            audio.pause();
+            document.getElementById('playButton').innerHTML = 'Play Background Music';
+        }
+    }
+
+    document.getElementById('playButton').addEventListener('click', function() {
+        toggleAudio();
+    });
+</script>
+     </body>
+     </html>
